@@ -5,7 +5,7 @@ export default [
   {
     files: ['**/*.js'],
     rules: {
-      'no-unused-vars': 'error',
+      'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       'no-console': 'error'
     }
   }
