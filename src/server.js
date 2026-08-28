@@ -4,6 +4,4 @@ import { connectDatabase } from './db.js'
 
 await connectDatabase()
 
-app.listen(config.port, () => {
-  console.log(`APIForge running on http://localhost:${config.port}`)
-})
+app.listen(config.port)
