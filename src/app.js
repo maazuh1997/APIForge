@@ -23,6 +23,6 @@ app.use('/api/v1/users', userRoutes)
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(openapi))
 
 app.use((req, res) => res.status(404).json({ error: 'Route not found' }))
-app.use((error, req, res, next) => {
+app.use((error, req, res, _next) => {
   res.status(500).json({ error: 'Internal server error' })
 })
